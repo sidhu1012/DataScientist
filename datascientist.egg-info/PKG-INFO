@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: DataScientist
+Version: 0.0.1
+Summary: A python library to do almost all data science tasks automatically.
+Home-page: https://github.com/sidhu1012/DataScientist
+Author: Sudeep Sidhu
+Author-email: sudeepsidhu102@gmail.com
+License: UNKNOWN
+Description: # DataScientist
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
