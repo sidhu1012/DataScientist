@@ -30,7 +30,7 @@ __pycache__/
 dist/
 build/
 
-SoloG.egg-info/
+datascientist.egg-info/
 
 # Tox files
 tox.ini
