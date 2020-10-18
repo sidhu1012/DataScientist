@@ -5,4 +5,4 @@ def test_mse():
     a = np.array([0, 1, 2])
     b = np.array([3, 2, 1])
     
-    assert _mse(a, b) == 6.0
+    assert round(_mse(a, b), 2) == 3.67
