@@ -1,4 +1,3 @@
--e git+https://github.com/sidhu1012/DataScientist.git@970a9238fc6373ce64e35251dc1ec695a84b5e36#egg=datascientist
 joblib==0.17.0
 numpy==1.19.2
 pandas==1.1.3
