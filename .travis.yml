@@ -12,7 +12,6 @@ install:
 script:
   - set -e
   - bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports";
-    fi
 
 notifications:
   email: false
