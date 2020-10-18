@@ -1,6 +1,6 @@
-import datascientist.model.regression.evaluation_metrics.mse import _mse
-import datascientist.model.regression.evaluation_metrics.mae import _mae
-import datascientist.model.regression.evaluation_metrics.rmse import _rmse
+from datascientist.model.regression.evaluation_metrics.mse import _mse
+from datascientist.model.regression.evaluation_metrics.mae import _mae
+from datascientist.model.regression.evaluation_metrics.rmse import _rmse
 
 from sklearn.linear_model import LinearRegression
 import numpy as np
@@ -15,9 +15,9 @@ def _linear_regression(*, train=(x_train, y_train), test=(x_test, y_test), x_pre
 
     if metrics == 'mse':
         accuracy = _mse(test[1], y_hat)
-    if metrics = 'rmse':
+    if metrics == 'rmse':
         accuracy = _rmse(test[1], y_hat)
-    if metrics = 'mae':
+    if metrics == 'mae':
         accuracy = _mae(test[1], y_hat)
 
     if x_predict is None:

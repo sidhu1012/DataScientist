@@ -1,5 +1,5 @@
 import numpy as np
-import datascientist.model.regression.evaluation_metrics.rmse import _rmse
+from datascientist.model.regression.evaluation_metrics.rmse import _rmse
 
 def test_mse():
     a = np.array([1, 2, 3])
