@@ -1,3 +1,7 @@
+import datascientist.model.regression.evaluation_metrics.mse import _mse
+import datascientist.model.regression.evaluation_metrics.mae import _mae
+import datascientist.model.regression.evaluation_metrics.rmse import _rmse
+
 from sklearn.linear_model import LinearRegression
 import numpy as np
 
@@ -8,7 +12,13 @@ def _linear_regression(*, train=(x_train, y_train), test=(x_test, y_test), x_pre
     model.fit(train[0], train[1])
     model_name = 'Linear Regression'
     y_hat = model.predict(test[0])
-    accuracy = pass #Metrics function
+
+    if metrics == 'mse':
+        accuracy = _mse(test[1], y_hat)
+    if metrics = 'rmse':
+        accuracy = _rmse(test[1], y_hat)
+    if metrics = 'mae':
+        accuracy = _mae(test[1], y_hat)
 
     if x_predict is None:
         return (model_name, accuracy, None)
