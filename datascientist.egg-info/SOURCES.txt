@@ -1,0 +1,6 @@
+README.md
+setup.py
+datascientist.egg-info/PKG-INFO
+datascientist.egg-info/SOURCES.txt
+datascientist.egg-info/dependency_links.txt
+datascientist.egg-info/top_level.txt
