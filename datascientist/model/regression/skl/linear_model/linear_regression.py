@@ -5,6 +5,7 @@ from datascientist.model.regression.evaluation_metrics.rmse import _rmse
 from sklearn.linear_model import LinearRegression
 import numpy as np
 
+
 def _linear_regression(*, train, test, x_predict=None, metrics, fit_intercept=True, normalize=False, copy_X=True, n_jobs=None):
     """For more info visit : https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html"""
 

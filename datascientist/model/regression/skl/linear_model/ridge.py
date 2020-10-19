@@ -5,9 +5,11 @@ from datascientist.model.regression.evaluation_metrics.rmse import _rmse
 from sklearn.linear_model import Ridge
 import numpy as np
 
+
 def _ridge(*, train, test, x_predict=None, metrics, alpha=1.0, fit_intercept=True, 
     normalize=False, copy_X=True, max_iter=None, tol=0.001, solver='auto', random_state=None):
-    """For for info visit : https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge"""
+    """For for info visit : 
+        https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge"""
 
     model = Ridge(alpha=alpha, fit_intercept=fit_intercept, normalize=normalize, copy_X=copy_X,
         max_iter=max_iter, tol=tol, solver=solver, random_state=random_state)
@@ -27,3 +29,4 @@ def _ridge(*, train, test, x_predict=None, metrics, alpha=1.0, fit_intercept=Tru
 
     y_predict = model.predict(x_predict)
     return (model_name, accuracy, y_predict)
+    
