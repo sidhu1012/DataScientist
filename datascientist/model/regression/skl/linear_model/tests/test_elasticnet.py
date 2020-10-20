@@ -12,27 +12,23 @@ def test_elasticnet():
 
     metrics = 'mae'
     answer = _elasticnet(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
-    print(answer)
     assert answer[0] == 'ElasticNet'
     assert round(answer[1], 3) == 1.091
     assert answer[2] is None
 
     metrics = 'mse'
     answer = _elasticnet(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
-    print(answer)
     assert answer[0] == 'ElasticNet'
     assert round(answer[1], 3) == 1.595
     assert answer[2] is None
 
     metrics = 'rmse'
     answer = _elasticnet(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
-    print(answer)
     assert answer[0] == 'ElasticNet'
     assert round(answer[1], 3) == 1.263
     assert answer[2] is None
 
     answer = _elasticnet(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics, x_predict=x_test)
-    print(answer)
     arr = np.array([7.72727248, 8.45454497, 8.54545503, 9.27272752])
     for i in range(len(answer[2])):
         assert round(answer[2][i], 2) == round(arr[i], 2)
