@@ -7,7 +7,9 @@ import numpy as np
 
 
 def _linear_regression(*, train, test, x_predict=None, metrics, fit_intercept=True, normalize=False, copy_X=True, n_jobs=None):
-    """For more info visit : https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html"""
+    """For more info visit : 
+        https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
+    """
 
     model = LinearRegression(fit_intercept=fit_intercept, normalize=normalize, copy_X=copy_X, n_jobs=n_jobs)
     model.fit(train[0], train[1])

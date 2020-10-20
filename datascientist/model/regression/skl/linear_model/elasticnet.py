@@ -10,7 +10,8 @@ def _elasticnet(*, train, test, x_predict=None, metrics, alpha=1.0, l1_ratio=0.5
     fit_intercept=True, normalize=False, precompute=False, max_iter=1000, copy_X=True,
     tol=0.0001, warm_start=False, positive=False, random_state=None, selection='cyclic'):
     """For more info visit : 
-        https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html#sklearn.linear_model.ElasticNet"""
+        https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html#sklearn.linear_model.ElasticNet
+    """
 
     model = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, fit_intercept=fit_intercept, normalize=normalize,
         precompute=precompute, max_iter=max_iter, copy_X=copy_X, tol=tol, warm_start=warm_start,
