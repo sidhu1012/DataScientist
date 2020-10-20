@@ -29,5 +29,5 @@ def test_lasso():
     assert answer[2] is None
 
     answer = _lasso(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics, x_predict=x_test)
-    assert np.any(answer[2] == np.array([8. , 8.5, 8.5, 9. ]))
+    assert np.any(answer[2] == np.array([8., 8.5, 8.5, 9. ]))
 
