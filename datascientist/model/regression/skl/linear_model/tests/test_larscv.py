@@ -30,7 +30,7 @@ def test_larscv():
     assert answer[2] is None
 
     answer = _larscv(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics, x_predict=x_test)
-    arr = np.array([ 5.99999773,  8.00000302,  8.99999645, 11.00000174])
+    arr = np.array([5.99999773,  8.00000302,  8.99999645, 11.00000174])
     for i in range(len(answer[2])):
         assert round(answer[2][i], 2) == round(arr[i], 2)
 
