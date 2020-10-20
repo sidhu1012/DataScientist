@@ -12,26 +12,22 @@ def test_lasso():
 
     metrics = 'mae'
     answer = _lasso(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
-    #print(answer)
     assert answer[0] == 'Lasso'
     assert round(answer[1], 2) == 1.25
     assert answer[2] is None
 
     metrics = 'mse'
     answer = _lasso(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
-    #print(answer)
     assert answer[0] == 'Lasso'
     assert round(answer[1], 3) == 2.125
     assert answer[2] is None
 
     metrics = 'rmse'
     answer = _lasso(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
-    #print(answer)
     assert answer[0] == 'Lasso'
     assert round(answer[1], 4) == 1.4577
     assert answer[2] is None
 
     answer = _lasso(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics, x_predict=x_test)
-    #print(answer)
     assert np.any(answer[2] == np.array([8. , 8.5, 8.5, 9. ]))
-#test_lasso()
+
