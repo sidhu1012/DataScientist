@@ -26,7 +26,7 @@ def test_larscv():
     metrics = 'rmse'
     answer = _larscv(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
     assert answer[0] == 'LarsCV'
-    assert round(answer[1] * 10**6, 3) == 2.733
+    assert round(answer[1] * 10**16, 3) == 8.882
     assert answer[2] is None
 
     answer = _larscv(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics, x_predict=x_test)
