@@ -30,4 +30,3 @@ def test_lassolars():
 
     answer = _lassolars(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics, x_predict=x_test)
     assert np.any(answer[2] == np.array([8.5, 8.5, 8.5, 8.5]))
-test_lassolars()
