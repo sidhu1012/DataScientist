@@ -1,6 +1,7 @@
 from datascientist.model.regression.skl.linear_model.elasticnetcv import _elasticnetcv
 
 import numpy as np
+from pytest import raises
 
 
 def test_elasticnetcv():
@@ -32,3 +33,7 @@ def test_elasticnetcv():
     arr = np.array([6.01765141,  8.00036361,  9.01240037, 10.99511257])
     for i in range(len(answer[2])):
         assert round(answer[2][i], 2) == round(arr[i], 2)
+
+    x_train = np.array([[1, 1], [1, 2], [2, 2], [2, 3]])
+    y_train = np.dot(x_train, np.array([1, 2])) + 3
+    raises(ValueError, lambda: _elasticnetcv(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics, x_predict=x_test))
