@@ -14,7 +14,7 @@ def test_larscv():
     metrics = 'mae'
     answer = _larscv(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
     assert answer[0] == 'LarsCV'
-    assert round(answer[1] * 10**6, 2) == 2.64
+    assert round(answer[1] * 10**16, 2) == 4.44
     assert answer[2] is None
 
     metrics = 'mse'
