@@ -20,7 +20,7 @@ def test_lassolarscv():
     metrics = 'mse'
     answer = _lassolarscv(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
     assert answer[0] == 'LassoLarsCV'
-    assert round(answer[1] * 10**12, 3) == 7.471
+    assert round(answer[1] * 10**31, 3) == 7.889
     assert answer[2] is None
 
     metrics = 'rmse'
