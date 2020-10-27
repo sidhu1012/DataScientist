@@ -15,7 +15,7 @@ def test_ompcv():
     answer = _ompcv(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
     print(answer)
     assert answer[0] == 'OrthogonalMatchingPursuitCV'
-    assert round(answer[1] * 10**6, 2) == 2.90
+    assert round(answer[1] * 10**15, 2) == 1.78
     assert answer[2] is None
 
     metrics = 'mse'
