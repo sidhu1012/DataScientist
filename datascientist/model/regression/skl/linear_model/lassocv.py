@@ -7,14 +7,14 @@ import numpy as np
 
 
 def _lassocv(*, train, test, x_predict=None, metrics, eps=0.001, n_alphas=100, alphas=None, fit_intercept=True,
-    normalize=False, precompute='auto', max_iter=1000, tol=0.0001, copy_X=True, cv=None, verbose=False,
-    n_jobs=None, positive=False, random_state=None, selection='cyclic'):
+        normalize=False, precompute='auto', max_iter=1000, tol=0.0001, copy_X=True, cv=None, verbose=False,
+        n_jobs=None, positive=False, random_state=None, selection='cyclic'):
     """For for info visit : 
         https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html#sklearn.linear_model.LassoCV
     """
-    model = LassoCV(eps=0.001, n_alphas=100, alphas=None, fit_intercept=True, normalize=False,
-        precompute='auto', max_iter=1000, tol=0.0001, copy_X=True, cv=None, verbose=False, n_jobs=None,
-        positive=False, random_state=None, selection='cyclic')
+    model = LassoCV(eps=eps, n_alphas=n_alphas, alphas=alphas, fit_intercept=fit_intercept, normalize=normalize,
+        precompute=precompute, max_iter=max_iter, tol=tol, copy_X=copy_X, cv=cv, verbose=verbose, n_jobs=n_jobs,
+        positive=positive, random_state=random_state, selection=selection)
     model.fit(train[0], train[1])
     model_name = 'LassoCV'
     y_hat = model.predict(test[0])
@@ -31,4 +31,3 @@ def _lassocv(*, train, test, x_predict=None, metrics, eps=0.001, n_alphas=100, a
 
     y_predict = model.predict(x_predict)
     return (model_name, accuracy, y_predict)
-    
