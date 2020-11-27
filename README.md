@@ -6,6 +6,26 @@
 ## DataScientist 
 DataScientist is a Python library in making to ease the life of a Data Scientist.
 
+## Quick Start :
+
+- **Fork it** :
+
+Get your own Fork/Copy of repository by clicking `Fork` button right upper corner.<br><br>
+
+- **Clone**:
+
+```sh
+$ git clone https://github.com/diyajaiswal11/Bloggitt.git
+```
+
+- **Branching**
+```
+$ git checkout -b [your_branch_name]
+```
+
+- **Make Changes in Source Code**
+
+
 ## Use
 1. It applies Feature Selection.
 2. It does Dimensionality Reduction.
