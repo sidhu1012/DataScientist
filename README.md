@@ -15,7 +15,7 @@ Get your own Fork/Copy of repository by clicking `Fork` button right upper corne
 - **Clone**:
 
 ```sh
-$ git clone https://github.com/diyajaiswal11/Bloggitt.git
+$ git clone https://github.com/Dacience/DataScientist.git
 ```
 
 - **Branching**
@@ -24,6 +24,16 @@ $ git checkout -b [your_branch_name]
 ```
 
 - **Make Changes in Source Code**
+
+# For Commiting Changes
+
+$ git commit -m "<your commit message>"
+
+```
+
+- **Push your Commit to Repo**
+```
+$ git push origin <branch_name>
 
 
 ## Use
