@@ -1,14 +1,14 @@
 # Contributing Guidelines  
   
 This documentation contains a set of guidelines to help you during the contribution process.   
-We are happy to welcome all the contributions from anyone willing to improve/add new scripts to this project. Thank you for helping out and remember, **no contribution is too small.**  
+We are happy to welcome all the contributions from anyone willing to improve/add new scripts to this project. Thank you for helping out and remember, No contribution is too small.
   
 # Submitting Contributions👩‍💻👨‍💻  
 Below you will find the process and workflow used to review and merge your changes.  
-## Step 0 : Find an issue  
-- Take a look at the Existing Issues or create your **own** Issues! 
-- Wait for the Issue to be assigned to you after which you can start working on it.  
-- Note : Every change in this project should/must have an associated issue.
+## Step 0 : Identify what you want to contribute.
+- If you want to add or change a major feature, create an issue and discuss with the maintainer what you would like to change.
+- If you want to work on an Existing Issues or an Issue that you created, check if anyone is working on that issue.
+- If no one is working on the issue, just comment and start working on it otherwise wait for the Issue to be assigned to you.
 ![IssuesDemo](assets/issues.jpg)
 
 ## Step 1 : Fork the Project  
@@ -26,14 +26,31 @@ $ git remote update
 $ git checkout <branch-name>  
 $ git rebase upstream/<branch-name>  
 ```  
-## Step 2 : Branch  
+## Step 2 : Branch 
+**Make a branch only if you are working on a major feature otherwise skip this step.**
 Create a new branch. Use its name to identify the issue your addressing.  
 ```  
 # It will create a new branch with name Branch_Name and switch to that branch 
 $ git checkout -b branch_name  
 ```  
-## Step 3 : Work on the issue assigned  
-- Work on the issue(s) assigned to you.   
+
+## Step 3 : Work Remotely  
+- Now you are ready to your work to the remote repository.
+### Environment Setup and Local Installation:
+1. Drop a :star: on the Github Repository.
+
+1. Download Python IDE
+	[Install Anaconda for Windows](https://docs.anaconda.com/anaconda/install/windows/)
+	[Install Anaconda for MacOS](https://docs.anaconda.com/anaconda/install/mac-os/)
+	[Install Anaconda for Linux](https://docs.anaconda.com/anaconda/install/linux/)
+
+1. Go to the AnacondaPrompt and use command to install the packages:
+	pip install -r requirements.txt
+
+1. Open the project in the Jupyter Notebook to use it.
+
+
+## Step 4 : Work on the feature/ issue.  
 - Add all the files/folders needed.  
 - After you've made changes or made your contribution to the project add changes to the branch you've just created by:  
 ```  
@@ -43,26 +60,25 @@ $ git add .
 # To add only a few files to Branch_Name
 $ git add <some files>
 ```
-  
-## Step 4 : Commit  
+
+## Step 5 : Commit  
 - To commit give a descriptive message for the convenience of reviewer by:  
 ```
 # This message get associated with all files you have changed  
 $ git commit -m "message"  
 ```  
 
-## Step 5 : Work Remotely  
-- Now you are ready to your work to the remote repository.  
+## Step 6 : Upload your changes   
 - When your work is ready and complies with the project conventions, upload your changes to your fork:  
   
 ```  
 # To push your work to your remote repository  
 $ git push -u origin Branch_Name  
 ```  
-- Here is how your branch will look.
+- Here is how your branch will look in the fork.
 ![BranchDemo](assets/branch.png)
 
-## Step 6 : Pull Request  
+## Step 7 : Pull Request  
 - Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.  
 ![pullrequest-send](assets/pullrequest-send.png)  
   
@@ -79,5 +95,5 @@ You can refer to the following articles on basics of Git and Github and also con
   
   
 ## Things to remember while contributing:
-* For major changes, please open an issue first and do discuss with the maintainer what you would like to change.
 * Please make sure to update tests case wherever necessary.
+* If any package is used that was not present in the requirements.txt, add the package name and the version used to the requirements.txt file.
