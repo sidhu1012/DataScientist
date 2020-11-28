@@ -37,17 +37,19 @@ $ git checkout -b branch_name
 ## Step 3 : Work Remotely  
 - Now you are ready to your work to the remote repository.
 ### Environment Setup and Local Installation:
-1. Drop a :star: on the Github Repository.
+* Drop a :star: on the Github Repository.
 
-1. Download Python IDE
+* Download Python IDE
 	[Install Anaconda for Windows](https://docs.anaconda.com/anaconda/install/windows/)
 	[Install Anaconda for MacOS](https://docs.anaconda.com/anaconda/install/mac-os/)
 	[Install Anaconda for Linux](https://docs.anaconda.com/anaconda/install/linux/)
 
-1. Go to the AnacondaPrompt and use command to install the packages:
-	pip install -r requirements.txt
+* Go to the AnacondaPrompt and use command to install the packages:
+```
+pip install -r requirements.txt
+```
 
-1. Open the project in the Jupyter Notebook to use it.
+* Open the project in the Jupyter Notebook to use it.
 
 
 ## Step 4 : Work on the feature/ issue.  
