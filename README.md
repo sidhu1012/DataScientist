@@ -43,12 +43,33 @@ $ git push origin <branch_name>
 4. It applies all algorithm based ML models and returns the best model, accuracy, predicted output for dataset.
    And many more...
 
+ ## 💻 Development guidelines
+
+1.  Put all the code in one of the existing files in  `/src`.
+    
+3.  Push all the code to your own branch. Once you are sure it is working, merge it with the `dev`  branch. Let's maintain only the stable and released versions on the  `master`  branch.
+    
+4.  Write a kick-ass, readable, and clean code.
+
 ## Contributing
 Pull requests are WELCOME. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests case wherever necessary.
 
+##  💼  Code of Conduct
+
+We want to facilitate a healthy and constructive community behavior by adopting and enforcing our code of conduct.
+Please adhere toward our [Code-of-Conduct](code-of-conduct.md).
+
+## 🏆 Contributing
+
+Please read  [CONTRIBUTING.md](CONTRIBUTING..md)  for information on how to contribute to DataScientist.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
+## ❤️ Thanks to our awesome contributors.
+
 ## Like This?? Star ⭐ this Repo.
+
+💜 **Thanks**
