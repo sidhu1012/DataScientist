@@ -13,21 +13,21 @@ def test_random_forest():
     metrics = 'mae'
     answer = _random_forest_regression(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
     assert answer[0] == 'RandomForest'
-    assert round(answer[1] * 10, 3) == 3.975
+    assert round(answer[1] * 10, 3) == 4.275
     assert answer[2] is None
 
     metrics = 'mse'
     answer = _random_forest_regression(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
     assert answer[0] == 'RandomForest'
-    assert round(answer[1] * 10, 2) == 2.35
+    assert round(answer[1] * 10, 2) == 2.84
     assert answer[2] is None
 
     metrics = 'rmse'
     answer = _random_forest_regression(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
     assert answer[0] == 'RandomForest'
-    assert round(answer[1], 2) == 0.48
+    assert round(answer[1], 2) == 0.53
     assert answer[2] is None
 
     answer = _random_forest_regression(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics,
                                        x_predict=x_test)
-    assert np.any(answer[2] == np.array([6.66,  7.8,  8.95, 10.32]))
+    assert np.any(answer[2] == np.array([6.73,  7.93,  9.15, 10.24]))

@@ -11,13 +11,14 @@ def _random_forest_regression(*, train, test, x_predict=None, metrics, n_estimat
                               min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features='auto',
                               max_leaf_nodes=None,
                               min_impurity_decrease=0.0, min_impurity_split=None, bootstrap=True, oob_score=False,
-                              n_jobs=None,
-                              random_state=None, verbose=0, warm_start=False):
+                              n_jobs=None, random_state=76,
+                              verbose=0, warm_start=False):
     """For for info visit :
         https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
     """
     model = RandomForestRegressor(n_estimators=n_estimators, max_depth=max_depth, min_samples_split=min_samples_split,
-                                  min_samples_leaf=min_samples_leaf, min_weight_fraction_leaf=min_weight_fraction_leaf)
+                                  min_samples_leaf=min_samples_leaf, min_weight_fraction_leaf=min_weight_fraction_leaf,
+                                  random_state=random_state)
     model.fit(train[0], train[1])
     model_name = 'RandomForest'
     y_hat = model.predict(test[0])
