@@ -15,8 +15,8 @@ Below you will find the process and workflow used to review and merge your chang
 - Fork this Repository. This will create a Local Copy of this Repository on your Github Profile. Keep a reference to the original project in `upstream` remote.  
 ```  
 $ git clone https://github.com/<your-username>/<repo-name>  
-$ cd <repo-name>  
-$ git remote add upstream https://github.com/<upstream-owner>/<repo-name>  
+$ cd DataScientist
+$ git remote add upstream git@github.com:Dacience/DataScientist.git
 ```  
 ![ForkDemo](assets/fork.jpg)
 
@@ -39,17 +39,19 @@ $ git checkout -b branch_name
 ### Environment Setup and Local Installation:
 * Drop a :star: on the Github Repository.
 
-* Download Python IDE
-	[Install Anaconda for Windows](https://docs.anaconda.com/anaconda/install/windows/)
-	[Install Anaconda for MacOS](https://docs.anaconda.com/anaconda/install/mac-os/)
-	[Install Anaconda for Linux](https://docs.anaconda.com/anaconda/install/linux/)
+* Download [Python](https://www.python.org/downloads/)
 
-* Go to the AnacondaPrompt and use command to install the packages:
+* Download any Python IDE/ text editor, some of the recommended ones:
+	[Install Anaconda](https://docs.conda.io/en/latest/miniconda.html)
+	[Install VS code](https://code.visualstudio.com/download)
+	[Install Pycharm](https://www.jetbrains.com/pycharm/download/#section=windows)
+
+* Go to your command prompt(CMD) and use command to install the packages:
 ```
 pip install -r requirements.txt
 ```
 
-* Open the project in the Jupyter Notebook to use it.
+* Open the project in your IDE/ text editor to use it.
 
 
 ## Step 4 : Work on the feature/ issue.  
