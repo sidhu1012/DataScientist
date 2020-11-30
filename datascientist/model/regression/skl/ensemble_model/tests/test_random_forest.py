@@ -12,19 +12,19 @@ def test_random_forest():
 
     metrics = 'mae'
     answer = _random_forest_regression(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
-    assert answer[0] == 'RandomForest'
+    assert answer[0] == 'RandomForestRegressor'
     assert round(answer[1] * 10, 3) == 4.275
     assert answer[2] is None
 
     metrics = 'mse'
     answer = _random_forest_regression(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
-    assert answer[0] == 'RandomForest'
+    assert answer[0] == 'RandomForestRegressor'
     assert round(answer[1] * 10, 2) == 2.84
     assert answer[2] is None
 
     metrics = 'rmse'
     answer = _random_forest_regression(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
-    assert answer[0] == 'RandomForest'
+    assert answer[0] == 'RandomForestRegressor'
     assert round(answer[1], 2) == 0.53
     assert answer[2] is None
 

@@ -18,9 +18,14 @@ def _random_forest_regression(*, train, test, x_predict=None, metrics, n_estimat
     """
     model = RandomForestRegressor(n_estimators=n_estimators, max_depth=max_depth, min_samples_split=min_samples_split,
                                   min_samples_leaf=min_samples_leaf, min_weight_fraction_leaf=min_weight_fraction_leaf,
-                                  random_state=random_state)
+                                  max_features=max_features,
+                                  max_leaf_nodes=max_leaf_nodes,
+                                  min_impurity_decrease=min_impurity_decrease, min_impurity_split=min_impurity_split,
+                                  bootstrap=bootstrap, oob_score=oob_score,
+                                  n_jobs=n_jobs, random_state=random_state,
+                                  verbose=verbose, warm_start=warm_start)
     model.fit(train[0], train[1])
-    model_name = 'RandomForest'
+    model_name = 'RandomForestRegressor'
     y_hat = model.predict(test[0])
 
     if metrics == 'mse':
