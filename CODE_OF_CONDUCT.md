@@ -19,6 +19,7 @@ include:
 * Gracefully accepting constructive criticism
 * Focusing on what is best for the community
 * Showing empathy towards other community members
+* Not referring anyone by any titles but by their usernames
 
 Examples of unacceptable behavior by participants include:
 
@@ -26,7 +27,7 @@ Examples of unacceptable behavior by participants include:
  advances
 * Trolling, insulting/derogatory comments, and personal or political attacks
 * Public or private harassment
-* Publishing others' private information, such as a physical or electronic
+* Publishing other's private information, such as a physical or electronic
  address, without explicit permission
 * Other conduct which could reasonably be considered inappropriate in a
  professional setting
