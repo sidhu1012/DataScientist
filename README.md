@@ -47,6 +47,16 @@ $ git commit -m "<your commit message>"
 ```
 $ git push origin <branch_name>
 
+## 🤝 How to Contribute
+
+### For sending PR:-
+>-   Pick an open issue from the  [issue list](https://github.com/garimasingh128/ToDoista/issues)  and claim it in the comments. After approval fix the issue and send us a pull request (PR).
+>-   All the PR’s need to be sent to the appropriate branch (usually "master").
+
+### For Open issue:-
+>-   You can create a new issue and send a pull request.
+>-   Please go through our issue list first (open as well as closed) and make sure the issue you are reporting does not replicate an issue already reported. If you have issues on multiple pages, report them separately. Do not combine them into a single issue.
+
 
 ## Use
 1. It applies Feature Selection.
