@@ -2,6 +2,13 @@
 
 [![Join the chat at https://gitter.im/Dacience/DataScientist](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Dacience/DataScientist?utm_source=badge&utm_medium=badge&utm_content=badge)
 
+![GitHub stars](https://img.shields.io/github/stars/Dacience/DataScientist.svg?logo=github)
+![GitHub forks](https://img.shields.io/github/forks/Dacience/DataScientist.svg?logo=github&color=teal)
+![License](https://img.shields.io/badge/license-MIT-brightgreen)
+![Maintained](https://img.shields.io/maintenance/yes/2020)
+![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-tomato.svg?style=flat&logo=git)
+![GitHub top language](https://img.shields.io/github/languages/top/Dacience/DataScientist?color=yellow&logo=python)
+
 
 ## DataScientist 
 DataScientist is a Python library in making to ease the life of a Data Scientist.
