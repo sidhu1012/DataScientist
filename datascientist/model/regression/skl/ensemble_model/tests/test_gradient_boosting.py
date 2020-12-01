@@ -13,13 +13,13 @@ def test_gradient_boosting():
     metrics = 'mae'
     answer = _gradient_boosting_regression(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
     assert answer[0] == 'GradientBoostingRegressor'
-    assert round(answer[1] * 10 ** 4, 2) == 2.44
+    assert round(answer[1] * 10**4, 2) == 2.44
     assert answer[2] is None
 
     metrics = 'mse'
     answer = _gradient_boosting_regression(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
     assert answer[0] == 'GradientBoostingRegressor'
-    assert round(answer[1] * 10 ** 8, 2) == 9.10
+    assert round(answer[1] * 10**8, 2) == 9.10
     assert answer[2] is None
 
     metrics = 'rmse'
@@ -33,5 +33,3 @@ def test_gradient_boosting():
     arr = np.array([6.00043558,  8.00005297,  8.99991706, 10.99959438])
     for i in range(len(answer[2])):
         assert round(answer[2][i], 2) == round(arr[i], 2)
-
-
