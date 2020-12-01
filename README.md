@@ -13,6 +13,11 @@
 ## DataScientist 
 DataScientist is a Python library in making to ease the life of a Data Scientist.
 
+# This project is a part of NJACK Codes 2020 👣
+  OPEN SOURCE CONTEST - NWoc Code
+
+  ⭐ [Check out the website of NJACK Winter of Code 2020](https://njackwintercode.github.io)
+
 ## Quick Start :
 
 - **Fork it** :
