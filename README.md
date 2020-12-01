@@ -13,34 +13,9 @@
 ## DataScientist 
 DataScientist is a Python library in making to ease the life of a Data Scientist.
 
-## Quick Start :
+## How to install library
 
-- **Fork it** :
 
-Get your own Fork/Copy of repository by clicking `Fork` button right upper corner.<br><br>
-
-- **Clone**:
-
-```sh
-$ git clone https://github.com/Dacience/DataScientist.git
-```
-
-- **Branching**
-```
-$ git checkout -b [your_branch_name]
-```
-
-- **Make Changes in Source Code**
-
-# For Commiting Changes
-
-$ git commit -m "<your commit message>"
-
-```
-
-- **Push your Commit to Repo**
-```
-$ git push origin <branch_name>
 
 ## 🤝 How to Contribute
 
