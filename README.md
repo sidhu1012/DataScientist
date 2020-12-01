@@ -14,8 +14,47 @@
 DataScientist is a Python library in making to ease the life of a Data Scientist.
 
 ## How to install library
+# Using pip
+You can use pip to install joblib:
 
+ # For installing for all users, you need to run:
 
+  pip install joblib
+  You may need to run the above command as administrator
+
+ # On a unix environment, it is better to install outside of the hierarchy managed by the system:
+
+# pip install --prefix /usr/local joblib
+Installing only for a specific user is easy if you use Python 2.7 or above:
+
+pip install --user joblib
+
+# How to install numpy using Pip
+pip install numpy
+
+# Installing from Pandas by PyPi
+pandas can be installed via pip from PyPI.
+
+pip install panda
+
+# install scipy by pip
+pip install scipy
+
+# install python-dateutil
+pip install python-dateutil
+
+# install pytz
+pip install pytz
+
+# install scikit-learn
+use pip virtualenv
+pip install -U scikit-learn
+
+# install threadpoolcti 2.1.0
+pip install threadpoolctl
+
+# install six 1.15.0
+pip install six==1.15.0
 
 ## 🤝 How to Contribute
 
