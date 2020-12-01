@@ -1,4 +1,4 @@
-## WELCOME TO ALL
+## WELCOME ALL
 
 [![Join the chat at https://gitter.im/Dacience/DataScientist](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Dacience/DataScientist?utm_source=badge&utm_medium=badge&utm_content=badge)
 
@@ -12,11 +12,6 @@
 
 ## DataScientist 
 DataScientist is a Python library in making to ease the life of a Data Scientist.
-
-# This project is a part of NJACK Codes 2020 👣
-  OPEN SOURCE CONTEST - NWoc Code
-
-  ⭐ [Check out the website of NJACK Winter of Code 2020](https://njackwintercode.github.io)
 
 ## Quick Start :
 
