@@ -9,7 +9,7 @@ import numpy as np
 def _lasso(*, train, test, x_predict=None, metrics, alpha=1.0, fit_intercept=True, normalize=False,
     precompute=False, copy_X=True, max_iter=1000, tol=0.0001, warm_start=False, positive=False,
      random_state=None, selection='cyclic'):
-    """For for info visit : 
+    """For more info visit :
         https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso
     """
     model = Lasso(alpha=alpha, fit_intercept=fit_intercept, normalize=normalize, precompute=precompute, copy_X=copy_X,
