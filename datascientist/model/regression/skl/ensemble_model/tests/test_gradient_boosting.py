@@ -19,13 +19,13 @@ def test_gradient_boosting():
     metrics = 'mse'
     answer = _gradient_boosting_regression(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
     assert answer[0] == 'GradientBoostingRegressor'
-    assert round(answer[1] * 10**8, 2) == 9.10
+    assert round(answer[1] * 10**8, 2) == 0.23
     assert answer[2] is None
 
     metrics = 'rmse'
     answer = _gradient_boosting_regression(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics)
     assert answer[0] == 'GradientBoostingRegressor'
-    assert round(answer[1] * 10 ** 4, 2) == 3.02
+    assert round(answer[1] * 10 ** 4, 2) == 0.48
     assert answer[2] is None
 
     answer = _gradient_boosting_regression(train=(x_train, y_train), test=(x_test, y_test), metrics=metrics,
