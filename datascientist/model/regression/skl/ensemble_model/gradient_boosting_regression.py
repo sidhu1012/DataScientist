@@ -13,7 +13,7 @@ def _gradient_boosting_regression(*, train, test, x_predict=None, metrics,
                                   min_impurity_split=None, init=None, random_state=None, max_features=None,
                                   alpha=0.9, verbose=0, max_leaf_nodes=None, warm_start=False, presort='deprecated',
                                   validation_fraction=0.1, n_iter_no_change=None, tol=0.0001, ccp_alpha=0.0):
-    """For for info visit :
+    """For more info visit :
         https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html
     """
     model = GradientBoostingRegressor(loss=loss, learning_rate=learning_rate, n_estimators=n_estimators,
