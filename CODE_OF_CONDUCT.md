@@ -55,7 +55,7 @@ further defined and clarified by project maintainers.
 
 ## Enforcement
 
-If you believe someone is violating the code of conduct, we ask that you report it by emailing [mailto:Daicience](<address here>).
+If you believe someone is violating the code of conduct, we ask that you report it by emailing [mailto:Daicience](sudeepsidhu1012@gmail.com).
 - Please include your name and a description of the incident, and we will get back to you ASAP.
 All complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. The project team is
