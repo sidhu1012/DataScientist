@@ -55,7 +55,7 @@ Please adhere toward our [Code-of-Conduct](code-of-conduct.md).
 Please read  [CONTRIBUTING.md](CONTRIBUTING..md)  for information on how to contribute to DataScientist.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/Dacience/DataScientist/blob/main/LICENSE)
 
 ## ❤️ Thanks to our awesome contributors.
 
