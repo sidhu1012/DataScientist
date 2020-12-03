@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec  2 14:34:22 2020
-
-@author: parva
-"""
 
 #Reading the test file having the data of footballers and target being their
 #overall skill score ( 1-100 ).

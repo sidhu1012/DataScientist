@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec  2 14:28:56 2020
 
-@author: parva
-"""
 import pandas as pd
 import numpy as np
 
@@ -79,6 +74,9 @@ class PearsonCorrelation:
         
     def top_corr_featurenames(self,feat_num = 1,ascending = True):
         '''
+        Evaluates the name of features with top values of Pearson Correlation
+        coefficient.
+        
         Parameters
         ----------
         feat_num: int, default=1
@@ -109,6 +107,9 @@ class PearsonCorrelation:
         
     def top_corr_features(self,feat_num = 1,ascending = True):
         '''
+        Evaluates the features along with all the rows with top values of 
+        Pearson Correlation coefficient.
+        
         Parameters
         ----------
         feat_num: int, default=1
