@@ -3,7 +3,8 @@
 [![Join the chat at https://gitter.im/Dacience/DataScientist](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Dacience/DataScientist?utm_source=badge&utm_medium=badge&utm_content=badge)
 
 ## LOGO
-<img src="logo.png" height="100px" align="center>
+
+<img src="logo.png" height="100px">
 
 ![GitHub stars](https://img.shields.io/github/stars/Dacience/DataScientist.svg?logo=github)
 ![GitHub forks](https://img.shields.io/github/forks/Dacience/DataScientist.svg?logo=github&color=teal)
