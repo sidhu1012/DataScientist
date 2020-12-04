@@ -1,4 +1,3 @@
-
 import pandas as pd
 import numpy as np
 
@@ -95,7 +94,6 @@ class PearsonCorrelation:
         '''
         cor_list = []
         feature_name = self.X.columns.tolist()
-        # cor_score = pd.DataFrame(columns = ['feature','cor_score'])
         for i in feature_name:
             cor = np.corrcoef(self.X[i], self.y)[0,1]
             cor_list.append(cor)
@@ -129,7 +127,6 @@ class PearsonCorrelation:
         '''
         cor_list = []
         feature_name = self.X.columns.tolist()
-        # cor_score = pd.DataFrame(columns = ['feature','cor_score'])
         for i in feature_name:
             cor = np.corrcoef(self.X[i], self.y)[0,1]
             cor_list.append(cor)        
