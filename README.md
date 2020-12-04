@@ -4,7 +4,7 @@
 
 ## LOGO
 
-<img src="logo.png" height="100px">
+<img src="Logo.png" height="250px">
 
 ![GitHub stars](https://img.shields.io/github/stars/Dacience/DataScientist.svg?logo=github)
 ![GitHub forks](https://img.shields.io/github/forks/Dacience/DataScientist.svg?logo=github&color=teal)
