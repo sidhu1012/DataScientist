@@ -50,9 +50,9 @@ $ git checkout -b branch_name
 ```
 pip install -r requirements.txt
 ```
-or
+and
 ```
-pip install -e requirements.txt
+pip install -e
 ```
 For more info, checkout documentation for [pip install](https://pip.pypa.io/en/stable/reference/pip_install/)
 
