@@ -61,6 +61,7 @@ class PearsonCorrelation:
             cor = np.corrcoef(self.X[i], self.y)[0,1]
             cor_list.append(cor)
         cor_list = [0 if np.isnan(i) else i for i in cor_list]
+        cor_list = np.around(cor_list,decimals = 6)
         cor_score['feature'] = feature_name
         cor_score['cor_score'] = cor_list
         if sort == True:
@@ -95,9 +96,10 @@ class PearsonCorrelation:
         cor_list = []
         feature_name = self.X.columns.tolist()
         for i in feature_name:
-            cor = np.corrcoef(self.X[i], self.y)[0,1]
+            cor =np.corrcoef(self.X[i], self.y)[0,1]
             cor_list.append(cor)
         cor_list = [0 if np.isnan(i) else i for i in cor_list]
+        cor_list = np.around(cor_list,decimals = 6)
         cor_feature = self.X.iloc[:,np.argsort(np.abs(cor_list))[-(feat_num):]].columns.tolist()
         if ascending == False:
             cor_feature = cor_feature[::-1]
@@ -130,6 +132,7 @@ class PearsonCorrelation:
         for i in feature_name:
             cor = np.corrcoef(self.X[i], self.y)[0,1]
             cor_list.append(cor)        
+        cor_list = np.around(cor_list,decimals = 6)
         cor_feature = self.X.iloc[:,np.argsort(np.abs(cor_list))[-(feat_num):]].columns.tolist()
         if ascending == False:
             cor_feature = cor_feature[::-1]
