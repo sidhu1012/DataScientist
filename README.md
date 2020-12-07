@@ -52,11 +52,11 @@ Please make sure to update tests case wherever necessary.
 ##  💼  Code of Conduct
 
 We want to facilitate a healthy and constructive community behavior by adopting and enforcing our code of conduct.
-Please adhere toward our [Code-of-Conduct](code-of-conduct.md).
+Please adhere toward our [Code-of-Conduct](CODE_OF_CONDUCT.md).
 
 ## 🏆 Contributing
 
-Please read  [CONTRIBUTING.md](CONTRIBUTING..md)  for information on how to contribute to DataScientist.
+Please read  [CONTRIBUTING.md](CONTRIBUTING.md)  for information on how to contribute to DataScientist.
 
 ## License
 [MIT](LICENSE)
