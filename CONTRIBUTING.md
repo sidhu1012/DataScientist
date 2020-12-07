@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ```
 and
 ```
-pip install -e
+pip install -e .
 ```
 For more info, checkout documentation for [pip install](https://pip.pypa.io/en/stable/reference/pip_install/)
 
