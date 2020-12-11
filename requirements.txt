@@ -7,3 +7,4 @@ scikit-learn==0.23.2
 scipy==1.5.3
 six==1.15.0
 threadpoolctl==2.1.0
+-e git+https://github.com/sidhu1012/DataScientist.git@7223798adabcd6438151813bbea9b8a107e103f1#egg=datascientist
